@@ -1,0 +1,22 @@
+#call, #whatsapp, #email{
+   display: flex;
+   justify-content: space-evenly;
+   align-items:center;
+}
+.contactContainer button{
+    margin: 0;
+}
+.contactContainer{
+   grid-template-columns: 1fr;
+   grid-template-rows: none;
+    box-shadow: 2px 2px 8px 8px rgba(0, 0, 0, 0.6);
+   padding: 30px;
+   background-color: white;
+   border-radius: 50px;
+   width: 50vw;
+   cursor: pointer;
+   transition: 0.3s ease ease-in-out;
+}
+.contactContainer:hover{
+    transform: scale(1.02);
+}

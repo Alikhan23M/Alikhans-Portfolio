@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Main container setting */
+.container{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-areas: 
+    'icons main_content main_content'
+    'sidebar main_content main_content';
+    /* padding: 20px; */
+    /* align-items: center; */
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+/* side bar setting */
+
+.sidebar{
+    background-color: rgba(0, 0, 0,0.5);
+    grid-area: sidebar;
+    width: 15vw;
+    position: absolute;
+    height: 100vh;
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-400px);
+
+}
+
+.sidebar ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 50px auto;
+}
+.sidebar ul li{
+    list-style: none;
+}
+.sidebar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    background-color: blueviolet;
+    padding: 12px 18px;
+    border-radius: 20px;
+}
+.sidebar ul li a:hover{
+    background-color: black;
+}
+
+
+/* Main content setting */
+
+.main_content{
+    width: 100vw;
+    grid-area: main_content;
+    display: grid;
+    justify-items: center; 
+    align-items: center;
+
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.intro{
+    margin: 20px;
+    padding: 20px;
+    display: grid;
+}
+
+.intro h1{
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.intro p{
+    font-size: 2rem;
+}
+
+
+.image{
+    position: relative;
+}
+.image img{
+    cursor: pointer;
+}
+
+/* Utility CLasses */
+.icons{
+    width: 9vw;
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    cursor: pointer;
+    grid-area: icons;
+    z-index: 2;
+    position: fixed;
+    padding: 4px;
+}
+
+.sidebarShow{
+    transform: translateX(0px);
+    transition: transform 0.3s ease-in-out;
+}
+.flexEnd{
+    width: 15vw;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+span{
+    color: blueviolet;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+span:hover{
+    color: rgb(17, 126, 126);
+}
+
+.btn{
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 30px;
+    border-radius: 20px;
+    background-color: blueviolet;
+    color: white;
+    border-color: transparent;
+    transition: 0.2s ease;
+}
+.btn:hover{
+    background-color: black;
+    transform: rotate(-15deg);
+}
+.btn:active{
+    background-color: rgb(194, 191, 191);
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: heading;
+    padding: 20px;
+
+}
+.blog p{
+    font-size: 1.3rem;
+}

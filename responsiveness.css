@@ -1,0 +1,46 @@
+@media screen and (max-width:880px) {
+    .intro h1{
+        font-size: 2rem;
+    }
+    .intro p{
+        font-size: 1.5rem;
+    }
+    .btn{
+        font-size: 1.5rem;
+    }
+    .image img{
+        height: 400px;
+    }
+    .sidebar{
+        width: 30vw;
+    }
+    .icons{
+        width: 30vw;
+    }
+
+    .sidebar ul li a{
+        font-size: 1rem;
+    }
+
+    /* Hover effect finishing for small screen */
+
+    .skill:hover, .blog:hover, .project:hover{
+        transform:initial;
+        box-shadow: initial;
+    }
+
+    .contactContainer:hover{
+        transform:initial;
+    }
+
+}
+
+
+@media screen and(max-width:500px) {
+    .btn{
+        font-size: 0.2rem;
+        padding: 5px;
+        margin-top: 20px;
+        border-radius: 17px;
+    }
+}
