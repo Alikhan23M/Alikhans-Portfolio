@@ -58,12 +58,13 @@
 .main_content{
     width: 100vw;
     grid-area: main_content;
-    display: flex;
+    display: grid;
     justify-content: center; 
     align-items: center;
-    flex-wrap:wrap;
-/*     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(400px, 1fr)); */
+    justify-items:center;
+    
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 .intro{
