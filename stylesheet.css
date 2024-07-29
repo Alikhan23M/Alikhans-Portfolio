@@ -58,12 +58,12 @@
 .main_content{
     width: 100vw;
     grid-area: main_content;
-    display: grid;
+    display: flex;
     justify-items: center; 
     align-items: center;
-
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
+    flex-wrap:wrap;
+/*     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(400px, 1fr)); */
 }
 
 .intro{
