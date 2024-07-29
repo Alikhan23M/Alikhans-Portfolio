@@ -59,7 +59,7 @@
     width: 100vw;
     grid-area: main_content;
     display: flex;
-    justify-items: center; 
+    justify-content: center; 
     align-items: center;
     flex-wrap:wrap;
 /*     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
